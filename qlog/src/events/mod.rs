@@ -208,7 +208,7 @@ impl From<EventType> for EventImportance {
                 EventImportance::Core,
             EventType::RecoveryEventType(
                 RecoveryEventType::CongestionStateUpdated,
-            ) => EventImportance::Base,
+            ) => EventImportance::Core,
             EventType::RecoveryEventType(RecoveryEventType::LossTimerUpdated) =>
                 EventImportance::Extra,
             EventType::RecoveryEventType(RecoveryEventType::PacketLost) =>

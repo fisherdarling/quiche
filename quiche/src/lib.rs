@@ -1931,7 +1931,7 @@ impl Connection {
         &mut self, writer: Box<dyn std::io::Write + Send + Sync>, title: String,
         description: String,
     ) {
-        self.set_qlog_with_level(writer, title, description, QlogLevel::Base)
+        self.set_qlog_with_level(writer, title, description, QlogLevel::Core)
     }
 
     /// Sets qlog output to the designated [`Writer`].
